@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Guia-Frontend</title>
+</head>
+<body>
+  <header>
+  <nav>
+    <h1>Guia Dev</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JAVASCRIPT</a></li>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </ul>
+  </nav>
+  </header>
+  
+  <main>
+  <section id="home">
+    <div>
+      <h2>Guia de Front-End</h2>
+      <div>
+        <p>
+          Bem-vindo ao Guia Front-End: O Seu Mapa para a Web<br><br>Dominar o Front-End é muito mais do que apenas escrever código; é a arte de construir a ponte entre a tecnologia e o usuário final. Transformamos linhas de texto em interfaces interativas, visuais e acessíveis que bilhões de pessoas utilizam todos os dias.<br><br>Neste guia, você encontrará o caminho das pedras para se tornar um desenvolvedor completo. A jornada começa na fundação, passa pelo estilo e ganha vida com a lógica de programação.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="html">
+    <div>
+      <h2>HTML</h2>
+      <div>
+        <p>
+          HTML: A Estrutura (O Esqueleto)<br><br>O HTML (HyperText Markup Language) é o ponto de partida. Ele não é uma linguagem de programação, mas sim de marcação. É aqui que você define o que é um título, um parágrafo, uma imagem ou um link. Sem o HTML, a web seria apenas um amontoado de dados sem organização.
+        </p>
+                <div class="cards">
+
+         <div class="card">
+          <h3>Cabeçalhos (&lt;h1&gt; a &lt;h6&gt;)</h3>
+          <p>Definem a hierarquia e a importância do conteúdo. O &lt;h1&gt; é o título principal, enquanto do &lt;h2&gt; ao &lt;h6&gt; organizam as subseções.<br><br>      Exemplo: &lt;h1&gt;Título Principal&lt;/h1&gt;
+          </p>
+         </div>
+
+         <div class="card">
+          <h3>Parágrafos e Textos &lt;p&gt;</h3>
+          <p>A tag &lt;p&gt; é usada para definir blocos de texto comuns. Ela organiza o conteúdo de forma legível e adiciona espaçamento entre os parágrafos.<br><br>
+            Exemplo: &lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;
+            </p>
+         </div>
+
+        <div class="card">
+          <h3>Links e Imagens (&lt;a&gt; e &lt;img&gt;)</h3>
+          <p>
+            O &lt;a&gt; cria hiperlinks para conectar páginas. A tag &lt;img&gt; insere imagens, usando src para o caminho e alt para acessibilidade.<br><br>
+            Exemplo: &lt;a href="#"&gt;Link&lt;/a&gt; <br>  &lt;img src="foto.jpg" alt="Descrição"&gt;
+          </p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="css">
+    <div>
+      <h2>CSS</h2>
+       <div>
+         <p>
+           CSS: O Estilo (A Pele e a Roupa)<br><br>Com o CSS (Cascading Style Sheets), damos personalidade ao site. É nesta etapa que você aprende sobre cores, tipografia, espaçamentos e, crucialmente, o Design Responsivo — garantindo que seu site seja bonito tanto em um monitor gigante quanto na tela de um celular.
+         </p>
+                 <div class="cards">
+
+         <div class="card">
+          <h3>Estilo e Bordas (color e border-radius)</h3>
+          <p>A propriedade color define a cor da fonte do texto. O border-radius é utilizado para arredondar os cantos de elementos, como botões ou caixas de destaque.<br><br>
+             Exemplo: color: blue; <br>
+             border-radius: 10px;
+             </p>
+         </div>
+
+         <div class="card">
+          <h3>Espaçamentos (margin e padding)</h3>
+          <p>
+            O padding gera espaço interno (dentro da borda do elemento), enquanto a margin cria espaço externo, definindo a distância entre o elemento e seus vizinhos.<br><br>
+              Exemplo: padding: 20px; <br>
+              margin: 15px;
+          </p>
+         </div>
+
+        <div class="card">
+          <h3>Layout com Flexbox (display: flex)</h3>
+          <p>
+            Transforma o elemento em um container flexível, facilitando muito o alinhamento e a distribuição de espaço entre os itens de forma responsiva.<br><br>
+              Exemplo: display: flex;<br>
+              justify-content: center;
+          </p>
+        </div>
+
+        </div>
+       </div>
+    </div>
+  </section>
+  
+  <section id="javascript">
+    <div>
+      <h2>JavaScript</h2>
+      <div>
+        <p>
+          JavaScript: A Interatividade (Os Músculos)<br><br>O JavaScript é a linguagem que traz vida à página. Com ele, você cria elementos que reagem ao clique do usuário, valida formulários, carrega dados de outros sites e constrói aplicações complexas e dinâmicas. É o motor que transforma uma página estática em uma experiência real.
+        </p>
+                <div class="cards">
+
+         <div class="card">
+          <h3>Seleção de Elementos (querySelector)</h3>
+          <p>
+            É o método utilizado para o JavaScript encontrar elementos no HTML. Ele usa a mesma lógica de seletores do CSS para localizar classes, IDs ou tags.<br><br>
+              Exemplo: const botao = document.querySelector('.btn');
+          </p>
+         </div>
+
+         <div class="card">
+          <h3>Lógica e Condicionais (function e if / else)</h3>
+          <p>
+            Funções executam blocos de código reaproveitáveis. O if / else controla o fluxo do site, decidindo qual ação tomar baseada em uma condição.<br><br>
+              Exemplo: <br>
+              if (x &gt; 10) { <br> 
+              &nbsp alert('Maior');<br> 
+              } else { <br> 
+              &nbsp alert('Menor'); <br> 
+              }
+          </p>
+         </div>
+
+        <div class="card">
+          <h3>Escuta de Eventos (addEventListener)</h3>
+          <p>
+            Permite que o código "escute" e reaja a interações do usuário, como um clique de mouse, um toque na tela ou o pressionamento de uma tecla.<br><br>
+              Exemplo: elemento.addEventListener('click', () =&gt; { console.log('Clicou!'); });
+          </p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  
+  <footer>
+    <p>© 2026 Robério Dias</p>
+  <div class="social">
+    <a href="https://github.com/RoberioDias" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/robério-dias-7001a1325?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+  </div>
+  </footer>
+      <script src="script.js"></script>
+</body>
+</html>

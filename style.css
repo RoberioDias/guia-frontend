@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  
+  color: darkblue;
+  padding-top: 70px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 9px 20px;
+  background: #0f172a; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+nav h1 {
+  white-space: nowrap;
+  font-size: 25px;
+}
+
+nav ul {
+  font-size: 15px;
+  display: flex;
+  align-items: center
+  justify-content: center;;
+  gap: 20px; 
+  list-style: none; 
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  nav h1{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  border-radius: 8px;     
+  transition: all 0.1s ease;
+}
+
+nav a:hover {
+  background: #3b82f6; 
+  color: white;
+  padding: 8px 12px;
+}
+
+nav button{
+  color: #3b82f6;
+  background-color: #0b1220;
+  border-radius: 10px;
+}
+
+a {
+  color: #3b82f6; 
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b; 
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 225px;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card p {
+  color: white;
+}
+
+.card h3 {
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+section{
+  background-color: #e5e5e5 ;
+  padding: 30px 20px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 40px 20px;
+}
+
+footer {
+  background: #0f172a;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #3b82f6;
+  padding: 5px 10px;
+}
+
+.dark-mode {
+  background-color: #0b1220;
+  color: #f1f5f9;
+}
+
+.dark-mode section {
+  background-color: #1e293b;
+}
+
+.dark-mode .card {
+  background: #334155;
+}
